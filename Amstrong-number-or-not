@@ -1,0 +1,18 @@
+class t {
+    public static void main(String[] args) {
+        int n = 153;
+        int rem, cubesum = 0;
+        int originalNum = n;  // storing the number in originalNum becuase number will be changed in further process
+        while (n != 0) {
+            rem = n % 10;
+            cubesum += Math.pow(rem, 3);
+            n = n / 10;
+        }
+
+        if (cubesum == originalNum) {
+            System.out.println("Given is amstrong no");
+        } else {
+            System.out.println("Given no is not amstrong no");
+        }
+    }
+}
