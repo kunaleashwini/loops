@@ -1,0 +1,13 @@
+class Main {
+    public static void main(String[] args) {
+
+        int rem = 0, res = 0;
+        int i = 12345;
+        while (i > 0) {
+            rem = i % 10;
+            res = res * 10 + rem;
+            i = i / 10;
+        }
+        System.out.println(res);
+    }
+}
