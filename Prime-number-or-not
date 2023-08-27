@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+class TestPrime {
+    public static boolean main1() {
+        Scanner console = new Scanner(System.in);
+
+        int number;
+
+        System.out.print("Enter the positive integer ");
+        number = console.nextInt();
+
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+
+    }
+    public static void main(String[] args) {
+        System.out.println(main1());
+    }
+}
